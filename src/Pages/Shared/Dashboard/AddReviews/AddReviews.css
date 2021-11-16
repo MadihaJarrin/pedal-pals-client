@@ -1,0 +1,25 @@
+.addService{
+    background-color: rgba(29, 31, 29, 0.993);
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+height: 600px;
+    box-shadow: inset 3em 1em rgb(223, 164, 2);
+}
+.addService form{
+    margin: 3%;
+}
+.addService form input {
+    width: 100%;
+    padding: 3%;
+    margin-bottom: 5%;
+   
+}
+.addService form textarea{
+width: 300px;
+}
+#add-h1{
+    padding-top: 4%;
+    color: white;
+}

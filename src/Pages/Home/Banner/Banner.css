@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+.banner{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    padding-bottom : 44px;
+    
+    
+}
+.banner-1 img{
+    /* transform:translate3d(50px, 0px, 0px),rotateX(0deg),rotateY(0deg),rotateZ(0deg) ,scaleX(1) ,scaleY(1), scaleZ(1);
+    -webkit-transform:translate3d(100px, 0px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1); */
+    padding-top : 40px;
+  
+   
+}
+.banner-2{
+    color: white;
+    font-style: oblique;
+    margin: auto 0;
+}
+.banner-2 span{
+    color: red;
+    font-size: 70px;
+    font-weight: 750;
+}
+.button{
+    background-color: rgb(172, 113, 5);
+    color: white;
+    width: 170px;
+}

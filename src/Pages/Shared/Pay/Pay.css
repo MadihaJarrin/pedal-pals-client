@@ -1,0 +1,15 @@
+.payment-cont{
+    /* background-color: blueviolet; */
+    background-image: url("https://www.paymentscardsandmobile.com/wp-content/uploads/2020/03/FinTech-image.png");
+   /* padding: 10%; */
+   background-repeat: no-repeat;
+   height: 600px;
+   background-position: center;
+   background-size: cover;
+}
+.payment-cont h1{
+    color: white;
+    text-shadow: 2px 2px 2px red;
+    margin-left: 5%;
+    border-bottom: thin;
+}

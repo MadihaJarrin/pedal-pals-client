@@ -1,0 +1,53 @@
+
+
+.booking-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    background-image: inherit;
+    /* background-image: url("../../../../images/bg2.jpg"); */
+    /* background-image: url("https://wallpapercave.com/wp/wp4313818.jpg"); */
+    background-image: url("https://static.vecteezy.com/system/resources/previews/001/436/744/non_2x/modern-background-with-black-and-red-lines-free-vector.jpg");
+    background-repeat: no-repeat;
+    height: 800px;
+    /* background-position: center; */
+    background-size: cover;
+    /* background-image: url("https://bbl.solutions/wp-content/uploads/2014/11/Blog-background-white-HNM-blue-gradient-blue-gear-2.png"); */
+    /* https://cdn.wallpapersafari.com/46/75/gH1Pzq.png */
+    /* background-repeat: no-repeat; */
+
+}
+.booking-details img{
+    width: 60%;
+    }
+    .booking-details{
+        /* padding-top: 8%; */
+        /* padding-left: 10%; */
+        margin-top: 10%;
+        margin-right: 5%;
+        color: white;
+    }
+    .booking-details p{
+text-align: justify;
+    }
+    .booking-confirm{
+        border: 1pc groove rgb(175, 32, 7);
+        padding: 15%;
+        background-color: rgb(210, 231, 224); ;
+    }
+    .booking-confirm{
+
+    }
+    .add-services form{
+        display: flex;
+        flex-direction: column;
+        /* width: 50%; */
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(199, 240, 226);
+
+        border-radius: 5px;
+    }
+    .add-services form input, textarea{
+        width: 100%;
+        /* margin-bottom: 10px; */
+    }

@@ -144,17 +144,6 @@ function Dashboard(props) {
                     sx={{ flexGrow: 2, p: 3, width: { sm: `calc(100% - ${drawerWidth}px)` } }}
                 >
                     <Toolbar />
-
-                    {/* <Switch>
-                        <Route exact path={path}>
-                            <Pay></Pay>
-                        </Route>
-                        <AdminRoute path={`${path}/makeAdmin`}>
-                            <MakeAdmin></MakeAdmin>
-                        </AdminRoute>
-
-                    </Switch> */}
-
                     <Typography paragraph>
                         <Grid container spacing={2}>
                             <Grid item xs={12} sm={12}>

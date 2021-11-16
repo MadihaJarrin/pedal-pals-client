@@ -53,7 +53,7 @@ const MakeAdmin = () => {
                     <Button className="btn btn-success" type="submit" variant="contained">Make Admin</Button>
                 </form>
                 {success && <Alert severity="success">Made Admin successfully!</Alert>}
-            </div>
+            </div><br />
             <Footer></Footer>
         </div>
     );

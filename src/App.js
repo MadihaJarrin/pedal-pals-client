@@ -16,6 +16,7 @@ import AddReviews from './Pages/Shared/Dashboard/AddReviews/AddReviews';
 import AddServices from './Pages/AddServices/AddServices';
 import ManageProducts from './Pages/Shared/Dashboard/ManageProducts/ManageProducts';
 import MakeAdmin from './Pages/Shared/Dashboard/MakeAdmin/MakeAdmin';
+import Contact from './Pages/Contact/Contact';
 
 
 function App() {
@@ -38,6 +39,9 @@ function App() {
             </Route>
             <Route path="/explore">
               <Explore></Explore>
+            </Route>
+            <Route path="/contact">
+              <Contact></Contact>
             </Route>
             <PrivateRoute path="/booking/:productId">
               <Booking></Booking>

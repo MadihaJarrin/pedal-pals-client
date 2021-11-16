@@ -5,9 +5,9 @@
     align-items: center;
     padding-top: 3%;
 }
-#about-cont{
+.about-cont{
     display: grid;
-    grid-template-columns: 3fr, 2fr, 2fr, 2fr;
+    grid-template-columns: repeat(2,1fr);
 
 }
 .about{

@@ -1,0 +1,9 @@
+.myorder{
+
+   height: 600px;
+   background-image: url("https://thefridgeagency.com/wp-content/uploads/sites/3/2018/04/AprilAdTracking_1000px.jpg");
+}
+.myorder h2{
+    text-shadow:2px 2px 2px red ;
+    color: white;
+}

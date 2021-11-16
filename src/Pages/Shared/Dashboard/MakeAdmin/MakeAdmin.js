@@ -1,10 +1,10 @@
-import { Navigation } from '@mui/icons-material';
 import { TextField } from '@mui/material';
 import Button from '@restart/ui/esm/Button';
 import React, { useState } from 'react';
 import { Alert } from 'react-bootstrap';
 import useAuth from '../../../../Hooks/useAuth';
 import Footer from '../../../Footer/Footer';
+import Navigation from '../../../Home/Navigation/Navigation';
 
 const MakeAdmin = () => {
     const [email, setEmail] = useState('');
@@ -53,7 +53,7 @@ const MakeAdmin = () => {
                     <Button className="btn btn-success" type="submit" variant="contained">Make Admin</Button>
                 </form>
                 {success && <Alert severity="success">Made Admin successfully!</Alert>}
-            </div><br />
+            </div><br /> <br /><br />
             <Footer></Footer>
         </div>
     );

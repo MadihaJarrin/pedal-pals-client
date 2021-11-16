@@ -63,17 +63,6 @@ const Navigation = () => {
                                         </li>
                                         <li>
                                             <ul className="user-div">
-                                                {/* {user?.email ?
-                                                    <div> */}
-                                                {/* <li><NavLink to="/login">Account</NavLink></li> */}
-                                                {/* <li><NavLink onClick={logout} to="/home">Logout</NavLink></li>
-                                                    </div> :
-                                                    <div> */}
-                                                {/* <li><NavLink to="/login">Account</NavLink></li> */}
-                                                {/* <li><NavLink to="/login">Login</NavLink></li>
-                                                        <li><NavLink to="/register">Register</NavLink></li>
-                                                    </div>
-                                                } */}
 
                                                 {
                                                     user?.email ?

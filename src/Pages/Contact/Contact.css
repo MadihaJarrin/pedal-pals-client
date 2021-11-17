@@ -8,6 +8,7 @@
 .about-cont{
     display: grid;
     grid-template-columns: repeat(2,1fr);
+    background-image: url("https://web-dev.imgix.net/image/admin/K1IN7zWIjFLjZzJ4Us3J.jpg?auto=format");
 
 }
 .about{
@@ -16,4 +17,8 @@
 .about form input, textarea{
     width: 70%;
     margin-bottom: 10px;
+}
+#about-last img{
+    width: 80%;
+   margin: 3%;
 }

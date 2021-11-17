@@ -12,7 +12,7 @@ const Home = () => {
             <Navigation></Navigation>
             <Banner></Banner>
             <Products></Products>
-            <div >
+            <div  >
                 <img src="https://st2.depositphotos.com/6887418/11540/v/450/depositphotos_115408458-stock-illustration-couple-bikers-riding-a-motorcycle.jpg" alt="" />
             </div>
             <Reviews></Reviews>

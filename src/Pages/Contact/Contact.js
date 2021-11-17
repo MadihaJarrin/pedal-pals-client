@@ -25,12 +25,12 @@ const Contact = () => {
         <div>
             <Navigation></Navigation>
             <div className="about-cont">
+
                 <div className="pt-20px border-end border-danger">
                     <img style={{ width: "700px" }} src="https://cdni.iconscout.com/illustration/premium/thumb/social-media-2706072-2260980.png" alt="" />
 
                 </div>
                 <div className="about border-end border-info">
-                    <h4>If  You  Have  Any  query , </h4>
                     <h3> Please Contact With us</h3>
                     <form onSubmit={handleSubmit(onSubmit)}>
                         <input {...register("name", { required: true, maxLength: 20 })} placeholder="Your Name" />
@@ -39,6 +39,9 @@ const Contact = () => {
                         <Button className="btn btn-success"> Submit</Button>
                     </form><br /><br />
                 </div>
+
+
+
                 <div className="about border-end border-info">
                     {/* <h4>If  You  Have  Any  query , </h4>
                     <h3> Please Contact With us</h3>
@@ -49,13 +52,14 @@ const Contact = () => {
                         <Button className="btn btn-success"> Submit</Button>
                     </form><br /><br /> */}
                     <h2>Contact with us </h2>
-                    <h5>Our Email:<a href="#">pedalpals@gmail.com</a></h5>
+                    <h5>Our Email:<a href="https://github.com/">pedalpals@gmail.com</a></h5>
                     <h5>Contact Number: +986524735</h5>
 
                 </div>
-                <div>
-                    <img src="https://i.pinimg.com/736x/2c/66/df/2c66df9f2ba31a2805d699b44655202e.jpg" alt="" />
+                <div id="about-last">
+                    <img src="https://www.pinclipart.com/picdir/big/337-3379122_technical-support-and-website-maintenance-contact-us-vector.png" alt="" />
                 </div>
+
             </div>
             <Footer></Footer>
         </div>

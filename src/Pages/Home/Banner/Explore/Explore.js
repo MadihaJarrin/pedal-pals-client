@@ -3,6 +3,7 @@ import Footer from '../../../Footer/Footer';
 import Navigation from '../../Navigation/Navigation';
 import OProducts from '../../Products/OProducts';
 import Products from '../../Products/Products';
+import './Explore.css';
 
 const Explore = () => {
     const [services, setServices] = useState([]);

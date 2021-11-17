@@ -1,7 +1,11 @@
 .review-container{
-    background-image: url("");
+/* background-color: lightgray; */
+padding: 5% , 5%, 0%, 5%;
+
 }
 
 .review-h{
-    background-image: url("https://image.shutterstock.com/image-vector/feedback-colorful-typography-banner-260nw-1318287326.jpg");
+    text-shadow: 2px 2px 2px hotpink;
+    padding-bottom: 2%;
+    padding-top: 2%;
 }

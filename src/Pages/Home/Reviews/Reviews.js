@@ -5,11 +5,12 @@ import './Reviews.css';
 const Reviews = () => {
     const [services, setServices] = useState([]);
     useEffect(() => {
-        const url = `http://localhost:5000/reviews`;
+        const url = `https://vast-hollows-68559.herokuapp.com/reviews`;
         fetch(url)
             .then(res => res.json())
             .then(data => setServices(data))
-    })
+    }, []);
+
     return (
         <div className="review-container">
             <div className="review-h">

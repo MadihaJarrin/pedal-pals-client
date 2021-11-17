@@ -13,7 +13,7 @@ const Contact = () => {
     const onSubmit = data => {
         console.log(data);
 
-        axios.post('http://localhost:5000/products', data)
+        axios.post('https://vast-hollows-68559.herokuapp.com/products', data)
             .then(res => {
                 if (res.data.insertedId) {
                     alert('added successfully');
@@ -40,14 +40,14 @@ const Contact = () => {
                     </form><br /><br />
                 </div>
                 <div className="about border-end border-info">
-                    <h4>If  You  Have  Any  query , </h4>
+                    {/* <h4>If  You  Have  Any  query , </h4>
                     <h3> Please Contact With us</h3>
                     <form onSubmit={handleSubmit(onSubmit)}>
                         <input {...register("name", { required: true, maxLength: 20 })} placeholder="Your Name" />
                         <input type="text" {...register("price")} placeholder="Your Email" />
                         <textarea {...register("description")} placeholder="Your Query" />
                         <Button className="btn btn-success"> Submit</Button>
-                    </form><br /><br />
+                    </form><br /><br /> */}
                     <h2>Contact with us </h2>
                     <h5>Our Email:<a href="#">pedalpals@gmail.com</a></h5>
                     <h5>Contact Number: +986524735</h5>

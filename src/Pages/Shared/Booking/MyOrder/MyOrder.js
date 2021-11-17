@@ -13,13 +13,13 @@ const MyOrder = () => {
     const email = user.email;
     // console.log(email);
     useEffect(() => {
-        fetch(`http://localhost:5000/myOrder/${email}`)
+        fetch(`https://vast-hollows-68559.herokuapp.com/myOrder/${email}`)
             .then(res => res.json())
             .then(data => setOrder(data))
     }, [isDeletd]);
 
     const handleDelte = (id) => {
-        fetch(`http://localhost:5000/deleteOrder/${id}`, {
+        fetch(`https://vast-hollows-68559.herokuapp.com/deleteOrder/${id}`, {
             method: "DELETE",
             headers: { "Content-Type": "application/json" },
         })

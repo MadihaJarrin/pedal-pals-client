@@ -17,6 +17,7 @@ import AddServices from './Pages/AddServices/AddServices';
 import ManageProducts from './Pages/Shared/Dashboard/ManageProducts/ManageProducts';
 import MakeAdmin from './Pages/Shared/Dashboard/MakeAdmin/MakeAdmin';
 import Contact from './Pages/Contact/Contact';
+import NotFound from './NotFound/NotFound';
 
 
 function App() {
@@ -71,7 +72,9 @@ function App() {
               <MakeAdmin></MakeAdmin>
             </PrivateRoute>
 
-
+            <Route exact path="*">
+              <NotFound></NotFound>
+            </Route>
 
           </Switch>
         </BrowserRouter>

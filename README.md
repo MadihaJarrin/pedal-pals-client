@@ -1,6 +1,6 @@
 # Pedal-Pals
 
-Live site link[Create React App](https://github.com/facebook/create-react-app).
+Live site link : [https://pedalpals-46632.web.app/]
 
 ## Purpose of PedalPals
 

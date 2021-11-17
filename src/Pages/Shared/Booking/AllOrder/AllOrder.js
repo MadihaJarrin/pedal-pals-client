@@ -10,7 +10,7 @@ const AllOrder = () => {
 
 
     useEffect(() => {
-        const url = `http://localhost:5000/allOrder`;
+        const url = `https://vast-hollows-68559.herokuapp.com/allOrder`;
         fetch(url)
             .then(res => res.json())
             .then(data => setAllOrder(data))
@@ -18,7 +18,7 @@ const AllOrder = () => {
 
     //Detele Button
     const handleDelte = (id) => {
-        fetch(`http://localhost:5000/deleteOrder/${id}`, {
+        fetch(`https://vast-hollows-68559.herokuapp.com/deleteOrder/${id}`, {
             method: "DELETE",
             headers: { "Content-Type": "application/json" },
         })
@@ -48,7 +48,7 @@ const AllOrder = () => {
                             <th scope="col">Package</th>
                             <th scope="col">Package Price</th>
                             <th scope="col">Status</th>
-                            {/* <th scope="col">Cancel</th> */}
+                            <th scope="col">Cancel</th>
                         </tr>
                     </thead>
                     <tbody >
@@ -71,11 +71,11 @@ const AllOrder = () => {
                                         </ul>
                                     </div>
                                 </td>
-                                {/* <td>
+                                <td>
                                     <Button onClick={() => handleDelte(order._id)} className="btn btn-danger">
                                         Delete
                                     </Button>
-                                </td> */}
+                                </td>
                             </tr>
                         ))
                         }

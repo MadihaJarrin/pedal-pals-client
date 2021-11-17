@@ -2,7 +2,7 @@ import { Link, Alert } from '@mui/material';
 import Button from '@restart/ui/esm/Button';
 // import { Button, Form } from 'react-bootstrap';
 import React, { useEffect, useState } from 'react';
-import { useParams } from 'react-router';
+import { useHistory, useLocation, useParams } from 'react-router';
 import useAuth from '../../../../Hooks/useAuth';
 import Navigation from '../../../Home/Navigation/Navigation';
 import './Booking.css';
@@ -11,17 +11,17 @@ const Booking = () => {
     const { productId } = useParams();
     const { user } = useAuth();
     const [product, setProduct] = useState({});
-    // const [bookingSuccess, setBookingSuccess] = useState(false);
+    const [bookingSuccess, setBookingSuccess] = useState(false);
 
 
     useEffect(() => {
-        fetch(`http://localhost:5000/products/${productId}`)
+        fetch(`https://vast-hollows-68559.herokuapp.com/products/${productId}`)
             .then(res => res.json())
             .then(data => setProduct(data));
     })
     const [offers, setOffer] = useState([]);
     useEffect(() => {
-        const url = "http://localhost:5000/products";
+        const url = "https://vast-hollows-68559.herokuapp.com/products";
         fetch(url)
             .then(res => res.json())
             .then(data => setOffer(data));
@@ -31,6 +31,8 @@ const Booking = () => {
     //for user 
     const [address, setAddress] = useState("");
     const [contact, setContact] = useState("");
+    const location = useLocation();
+    const history = useHistory();
 
     const handleAddress = e => {
         setAddress(e.target.value)
@@ -43,6 +45,7 @@ const Booking = () => {
     const handleAddUser = () => {
         const name = user.displayName;
         const email = user.email;
+
 
         const data = ({
             name: name,
@@ -57,7 +60,7 @@ const Booking = () => {
             status: "Pending",
         });
         console.log(data);
-        fetch("http://localhost:5000/addOrder", {
+        fetch("https://vast-hollows-68559.herokuapp.com/addOrder", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify(data),
@@ -71,6 +74,9 @@ const Booking = () => {
 
                 }
             })
+
+        history.replace('/dashboard');
+
     };
 
     return (
@@ -98,7 +104,7 @@ const Booking = () => {
                                     <Button onClick={handleAddUser} variant="primary" className="btn btn-success"><b>Purchase Confirm</b></Button>
                                 </Link>
 
-                                {/* {bookingSuccess && <Alert severity="success">Login successfully!</Alert>} */}
+                                {bookingSuccess && <Alert severity="success">Login successfully!</Alert>}
                             </form>
                         </div>
 

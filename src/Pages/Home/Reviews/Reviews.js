@@ -12,7 +12,7 @@ const Reviews = () => {
     }, []);
 
     return (
-        <div className="review-container">
+        <div className="review-container" style={{ backgroundColor: '#F3EFEF' }}>
             <div className="review-h">
                 <h1>Client Reviews</h1>
             </div>

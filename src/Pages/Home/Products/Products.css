@@ -33,5 +33,11 @@
     
   }
   .product-container h1{
-padding: 3%;
+padding: 4%;
+  }
+
+  #msr{
+    padding-bottom: 5%;
+  
+    margin-bottom: 5%;
   }

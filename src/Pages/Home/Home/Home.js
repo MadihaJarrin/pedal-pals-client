@@ -1,20 +1,27 @@
 import React from 'react';
 import Footer from '../../Footer/Footer';
 import Banner from '../Banner/Banner';
+import BannerDown from '../Banner/BannerDown';
 import Navigation from '../Navigation/Navigation';
+import PowerUnit from '../PowerUnit/PowerUnit';
 import Products from '../Products/Products';
 import Reviews from '../Reviews/Reviews';
 import Special from '../Special/Special';
 
 const Home = () => {
     return (
-        <div>
+        <div >
+            {/* style={{ backgroundColor: '#F3EFEF' }} */}
             <Navigation></Navigation>
-            <Banner></Banner>
-            <Products></Products>
+            <div style={{ backgroundColor: '#F3EFEF' }}>
+                <Banner></Banner>
+                <BannerDown></BannerDown>
+                <Products></Products>
+            </div>
             <div  >
                 <img src="https://st2.depositphotos.com/6887418/11540/v/450/depositphotos_115408458-stock-illustration-couple-bikers-riding-a-motorcycle.jpg" alt="" />
             </div>
+            <PowerUnit></PowerUnit>
             <Reviews></Reviews>
             <Special></Special>
             <Footer></Footer>

@@ -1,0 +1,38 @@
+.powerCont{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    /* padding-bottom : 120px; */
+    margin-top: 3%;
+  
+}
+.powerCont img{
+    /* transform:translate3d(50px, 0px, 0px),rotateX(0deg),rotateY(0deg),rotateZ(0deg) ,scaleX(1) ,scaleY(1), scaleZ(1);
+    -webkit-transform:translate3d(100px, 0px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1); */
+    padding-top : 40px;
+    width: 100%;
+
+}
+
+.powerCont-2{
+    color: white;
+    font-style: oblique;
+    margin: auto 0;
+}
+.powerCont-2 span{
+    color: red;
+    font-size: 70px;
+    font-weight: 750;
+}
+.powerButton{
+    /* background-color: rgb(172, 113, 5); */
+    /* color: white;
+    width: 170px; */
+}
+@media screen and (max-width: 1300px) {
+    .powerCont{
+        width: 100%;
+    }
+    .powerCont img{
+        width: 100%;
+    }
+  }

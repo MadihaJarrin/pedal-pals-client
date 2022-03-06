@@ -54,7 +54,7 @@ function Dashboard(props) {
                 <Link style={{ textDecoration: "none" }} to="/"><Button onClick={logout} color="inherit">Log Out</Button></Link>
 
                 {admin && <Box>
-                    <Link to={`${url}/allorder`} style={{ textDecoration: "none" }} to="/allorder"><Button color="inherit">Manage All Orders</Button></Link>
+                    <Link to={`${url}/allorder`} style={{ textDecoration: "none" }} to="/allorder"> <Button color="inherit">Manage All Orders</Button></Link>
                     <Link to={`${url}/addproducts`} style={{ textDecoration: "none" }} to="/addproducts"><Button color="inherit">Add Products</Button></Link>
                     <Link to={`${url}/makeAdmin`} style={{ textDecoration: "none" }} to="/makeadmin"><Button color="inherit">Make Admin</Button></Link>
                     <Link to={`${url}/manageproducts`} style={{ textDecoration: "none" }} to="/manageproducts"><Button color="inherit">Manage Products </Button></Link>
@@ -148,7 +148,7 @@ function Dashboard(props) {
                         <Grid container spacing={2}>
                             <Grid item xs={12} sm={12}>
 
-                                <h1 class="dash-h"> Kindly, Click your desire destination</h1>
+                                <h1 class="dash-h">Click your desire destination</h1>
                             </Grid>
                         </Grid>
                     </Typography>

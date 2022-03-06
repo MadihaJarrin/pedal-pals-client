@@ -4,19 +4,29 @@
 
 }
 .dash-cont{
-    background-image: url("../../../../images/bike4.jpg");
-    padding: 15%;
+    background-image: url("../../../../images/dashboard.jpeg");
+    padding: 20% 12%;
     background-repeat: no-repeat;
-    height: 600px;
+    height: 800px;
     background-position: center;
     background-size: cover;
 }
 .dash-h{
     text-align: center;
     color: white;
-    border: 2px solid rgb(94, 163, 4);
-    text-shadow: 2px 2px 2px green;
+    border: 2px solid rgb(167, 23, 4);
+    text-shadow: 2px 2px 2px rgb(94, 22, 12);
     border-radius: 10px;
     padding: 3%;
+    background-color:rgb(204, 69, 69) ;
+}
+.dash-h:hover{
+    /* text-align: center;
+    color: white;
+    border: 2px solid rgb(167, 23, 4);
+    text-shadow: 2px 2px 2px rgb(94, 22, 12);
+    border-radius: 10px;
+    padding: 3%; */
+    background-color:rgb(204, 69, 69) ;
    
 }

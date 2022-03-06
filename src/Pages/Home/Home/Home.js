@@ -2,6 +2,7 @@ import React from 'react';
 import Footer from '../../Footer/Footer';
 import Banner from '../Banner/Banner';
 import BannerDown from '../Banner/BannerDown';
+import BikeHistory from '../BikeHistory/BikeHistory';
 import Navigation from '../Navigation/Navigation';
 import PowerUnit from '../PowerUnit/PowerUnit';
 import Products from '../Products/Products';
@@ -22,6 +23,7 @@ const Home = () => {
                 <img src="https://st2.depositphotos.com/6887418/11540/v/450/depositphotos_115408458-stock-illustration-couple-bikers-riding-a-motorcycle.jpg" alt="" />
             </div>
             <PowerUnit></PowerUnit>
+            <BikeHistory></BikeHistory>
             <Reviews></Reviews>
             <Special></Special>
             <Footer></Footer>

@@ -13,6 +13,7 @@ import { styled } from '@mui/material/styles';
 import Rating from '@mui/material/Rating';
 import FavoriteIcon from '@mui/icons-material/Favorite';
 import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
+import './BikeHistory.css'
 
 const reviews = [
     {
@@ -72,11 +73,14 @@ const BikeHistory = () => {
 
                 <Grid item xs={12} sm={12} md={6}>
                     <Typography>
-                        <img
+                        <img id='bikehistory'
                             sx={{ borderRight: 1, }}
                             style={{
-                                width: 470, height: 580,
-                                borderRightStyle: 'ridge', borderBottomStyle: 'solid', borderWidth: '20px', borderColor: '#C6180C'
+                                width: 500, height: 580,
+                                borderRightStyle: 'ridge',
+                                borderBottomStyle: 'solid',
+                                borderWidth: '20px', borderColor: '#C6180C',
+
                             }}
                             src={bikeHistry} alt='' />
                     </Typography>

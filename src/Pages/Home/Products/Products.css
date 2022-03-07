@@ -25,15 +25,27 @@
     #msr{
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-      margin-left: 120px;
+      margin-left: 40px;
       justify-content: center;
-      gap: 20px;
+      gap: 10px;
   }
   
     
   }
   .product-container h1{
-padding: 4%;
+padding: 2%;
+  }
+  .product-container img{
+height: 50%;
+  }
+  #bike-card{
+background-color: rgb(36, 35, 35);
+color: white;
+  }
+  #bike-card:hover{
+background-color: rgb(255, 255, 255);
+color:black;
+border: 10px solid rgb(20, 18, 18);
   }
 
   #msr{

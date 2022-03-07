@@ -43,8 +43,16 @@ const Navigation = () => {
                                     <NavLink className="nav-link active header" to="/home">Home</NavLink>
                                 </li>
                                 <li className="nav-item">
+                                    <a className="nav-link active header" aria-current="page" href="#service">Popular Service</a>
+                                </li>
+                                <li className="nav-item">
+                                    <a className="nav-link active header" aria-current="page" href="#reviews">Reviews</a>
+                                </li>
+                                <li className="nav-item">
                                     <NavLink className="nav-link active header" to="/contact">Contact</NavLink>
                                 </li>
+
+
                                 {
                                     user.displayName && <NavLink className="nav-link active header" to="/dashboard">DashBoard</NavLink>
                                 }

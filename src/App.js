@@ -18,6 +18,7 @@ import ManageProducts from './Pages/Shared/Dashboard/ManageProducts/ManageProduc
 import MakeAdmin from './Pages/Shared/Dashboard/MakeAdmin/MakeAdmin';
 import Contact from './Pages/Contact/Contact';
 import NotFound from './NotFound/NotFound';
+import Reviews from './Pages/Home/Reviews/Reviews';
 
 
 function App() {

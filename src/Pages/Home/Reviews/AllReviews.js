@@ -11,8 +11,8 @@ const AllReviews = (props) => {
     const [value, setValue] = React.useState(0);
     // const [hover, setHover] = React.useState(-1);
     return (
-        <div >
-            <Card className="specialists-card shadow-lg p-3 mb-3" style={{ width: '18rem' }}>
+        <div id='reviews' >
+            <Card className="specialists-card shadow-lg p-3 ms-4" style={{ width: '20rem', height: "30rem", borderRadius: "50px" }}>
                 <Card.Img variant="top" src={img} /> <br />
                 <Card.Body>
                     <h3>{name}</h3><br />

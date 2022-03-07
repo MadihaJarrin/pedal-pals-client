@@ -9,8 +9,8 @@ const OProducts = (props) => {
 
     return (
 
-        <div>
-            <Card className="specialists-card shadow-lg p-3 mb-3" style={{ width: '18rem' }}>
+        <div id='service' >
+            <Card id="bike-card" className=" shadow-lg " style={{ width: '28rem', height: '40rem', margin: '10% 0% 0% 0%' }}>
                 <Card.Img variant="top" src={img} /> <br />
                 <Card.Body>
                     {/* <Card.Title>{name}</Card.Title> */}

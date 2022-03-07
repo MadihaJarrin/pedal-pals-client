@@ -1,5 +1,7 @@
 import { Button, Container, Grid, TextField, Typography, CircularProgress, Alert } from '@mui/material';
+import axios from 'axios';
 import React, { useState } from 'react';
+import GoogleLogin from 'react-google-login';
 import { NavLink, useLocation, useHistory } from 'react-router-dom';
 import useAuth from '../../../Hooks/useAuth';
 import login from '../../../images/login.jpg';
@@ -7,6 +9,22 @@ import Footer from '../../Footer/Footer';
 import Navigation from '../../Home/Navigation/Navigation';
 
 const Login = () => {
+
+    // const responseSuccessGoogle = (response) => {
+    //     console.log(response);
+    //     axios({
+    //         mathod: "POST",
+    //         url: "http://localhost:8000/api/googlelogin",
+    //         data: { tokenId: response.tokenId }
+    //     }).then(response => {
+    //         console.log(response);
+    //     })
+    // }
+
+
+    const responseErrorGoogle = (response) => {
+
+    }
     const [loginData, setLoginData] = useState({});
     const { user, loginUser, isLoading, authError, signInWithGoogle } = useAuth();
 
@@ -69,6 +87,18 @@ const Login = () => {
                         <p>------------ Or ------------</p>
 
                         <Button onClick={handleGoogleSignIn} variant="contained">Google Sign In</Button>
+                        {/* <Button variant="contained">Sign In with node</Button> */}
+                        <br></br>
+                        {/* <div>
+                            <GoogleLogin
+                                clientId="893453291495-ao7q3rooplkonsmaqflgr6hukro7n8sm.apps.googleusercontent.com"
+                                buttonText="Login"
+                                onSuccess={responseSuccessGoogle}
+                                onFailure={responseErrorGoogle}
+                                cookiePolicy={'single_host_origin'}
+                            />,
+
+                        </div> */}
                     </Grid>
                     <Grid item xs={12} md={6}>
                         <img style={{ width: '100%' }} src={login} alt="" />
